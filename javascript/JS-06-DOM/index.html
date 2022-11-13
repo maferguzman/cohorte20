@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulacion de DOM</title>
+</head>
+<body>
+    <h1 id="etiqueta1">Ejemplo del DOM</h1>
+    <p id="parrafo">Saludos desde el DOM</p>
+    <p id="otro">Soy otro parrafo</p>
+
+    <script>
+/*         let etiqueta = document.getElementById("etiqueta1");
+        console.log("Valor de etiqueta1: " + etiqueta); //menciona [object + tipo]
+        console.log("Valor de etiqueta1: " + etiqueta.innerHTML);
+
+        let parrafo = document.getElementById("parrafo");
+        console.log("Valor del parrafo: " + parrafo.innerHTML); //inner.HTML accede al contenido de la etiqueta
+
+        //getElementsByTagName - llama todos los elementos que tengan el mismo nombre de etiqueta
+
+        let parrafos1 = document.getElementsByTagName("p");
+        console.log("N° parrafos: " + parrafos.length) // Cuantos parrafos hay
+ */
+        let parrafos2 = document.getElementsByTagName("p");
+        for (let i = 0; i < parrafos2.length; i++){
+            console.log("N° parrafos: " + parrafos2[i].innerHTML);
+        }
+        
+    </script>
+</body>
+</html>

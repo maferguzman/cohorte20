@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones Js</title>
+</head>
+<body>
+    <script>
+        let miNombre = "Fer";
+        console.log(miNombre);
+
+        function miNombre(){
+            let nombre = "Victor";
+            console.log(nombre);
+        }
+        miNombre();
+
+        function funcion1(){
+            let valor = 2;
+            valor = valor + 3;
+            return valor;
+        }
+        let resultado = funcion1();
+        console.log("El resultado es: ", resultado);
+
+        function funcionesEjemplo(){
+            let valor1 = 2;
+            valor1 = valor1 + 5;
+            console.log("El resultado de valor1" + valor1);
+        }
+        funcionesEjemplo()
+
+        let variableGlobal = 5;
+        function funcion3() {
+            let variableLocal = "El valor es: ";
+            console.log(variableLocal + variableGlobal);
+        }
+        funcion3();
+
+        function funcion4(valor){
+            let numero = 6;
+            numero = numero * valor;
+            return numero;
+        }
+        let salidaa = funcion4(2)
+        console.log("El producto es " + salidaa);
+
+        // Otra opcion, añadir el argumento desde el inicio (poco utilizada)
+        function funcion4(valor = 4){
+            let numero = 6;
+            numero = numero * valor;
+            return numero;
+        }
+        let salida = funcion4()
+        console.log("El producto es " + salida);
+
+        //Funciones anonimas
+        let miFuncion0 = function(parametro){
+            parametro = parametro * 2;
+            return parametro;
+        }
+        console.log("Llamando a la funcion anonima " + miFuncion0(4));
+
+        let funcion01 = function(caracteres){
+            return "Hola " + caracteres;
+        }("Lunes");
+        console.log("El resultado es: " + funcion01);
+
+        let suma = (x, y) => {return x + y};
+        let resultado1 = suma (5, 7);
+        console.log("La suma es: " + resultado1);
+
+        //FUNCION NORMAL
+        function calcularPrecioTotal(precio){
+            let impuestos = 1.16;
+            let gastosEnvio = 10;
+            let precioTotal = (precio * impuestos) + gastosEnvio;
+            console.log("Su pago sería " + precioTotal);
+        }
+        calcularPrecioTotal(23.34)
+
+        //ANONIMA
+        let miFuncion = function(a){
+            a = 23.34
+            let b = 1.16;
+            let c = 10;
+            let resultado = (a * b) + c;
+            return resultado;
+        }
+        console.log("Total " + miFuncion());
+
+
+        //FLECHA
+        let calcularPrecioTotalf = (precio, impuestos, gastosEnvio,) => {return (precio * impuestos) + gastosEnvio};
+        
+        console.log("Su total es " + calcularPrecioTotalf(23.34, 1.16, 10));
+
+
+        //IMPUESTOS
+        function calculaPrecioTotal1(precio, porcentajeImpuestos, gastosEnvio){
+            let precioConImpuestos = ((1 + porcentajeImpuestos/100) * precio) + gastosEnvio;
+            return precioConImpuestos;
+        }
+        console.log("El resultado ", calculaPrecioTotal1(23.34, 16, 10));
+
+    </script>
+    
+</body>
+</html>

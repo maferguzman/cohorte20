@@ -1,0 +1,13 @@
+.cuadro {
+    border: 2px solid blue;
+    width: 200px;
+    height: 200px;
+}
+
+.uno {
+    background-color: hotpink;
+}
+
+.dos {
+    background-color: lightskyblue;
+}

@@ -1,0 +1,28 @@
+body {
+    overflow-x: hidden;
+}
+
+.altura-img {
+    height: calc(100vh - 56px);
+}
+
+.card-img-top {
+    height: 200px;
+    width: 200px;
+}
+
+.clr {
+    background-color: lightgreen;
+}
+
+.clr2 {
+    background-color: lightsalmon;
+}
+
+.clr3 {
+    background-color: lightsteelblue;
+}
+
+.clr4 {
+    background-color: lightgoldenrodyellow;
+}

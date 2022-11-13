@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+   <!--  <h1>Sumando valores</h1>
+    <form id="formulario">
+        Valor1 <input type="text" name="valor0" value="0"><br>
+        Valor2 <input type="text" name="valor1" value="0">
+    <button onclick="suma()">Mostrar</button>
+    </form>
+    <div id="valores"></div>  recupera los valores que traemos del formulario 
+    <script>
+        function sumaNumeros(){
+            let formulario = document.forms["formularioSuma"]
+            let resultado = "";
+            let valor0 = formulario["valor0"];
+            console.log(valor0);
+            let valor1 = formulario["valor1"];
+            console.log(valor1);
+            resultado = parseInt(valor0.value) + parseInt(valor1.value);
+            console.log(valor0.value);
+            console.log(valor1.value);
+            console.log(resultado);
+            document.getElementById("valores").innerHTML = resultado;
+        }
+    </script>
+
+    manejo de document.write 
+    <button onclick="cambio()">mostrar</button>
+    <script>
+        function cambio(){
+            document.write("saludo")
+        }
+    </script> -->
+
+    <style>
+        #imagen {
+            width: 350px;
+            height: 300px;
+        }
+    </style>
+    <h1>DOM imagenes</h1>
+    <button onclick="cambiar()">cambio</button>
+    <img id="imagen" src="./assets/0.jpg" alt="paisaje">
+    <script>
+        function cambiar(){
+            document.getElementById("imagen").src = "./assets/1.jpg";
+            document.getElementById("imagen").src = "./assets/3.jpg";
+        }
+    </script>
+</body>
+</html>

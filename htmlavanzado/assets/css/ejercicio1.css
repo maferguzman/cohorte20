@@ -1,0 +1,32 @@
+form {
+    color: white;
+    background-color: green;
+    border: 2px solid aqua;
+    border-radius: 8px;
+    width: 350px;
+    height: 350px;
+}
+
+label {
+    display: inline-block;
+    width: 80px;
+    margin-left: 50px;
+}
+
+h2 {
+    margin-left: 20px;
+}
+
+input {
+    border: 1px solid red;
+}
+
+.linea {
+    margin-left: 20px;
+}
+
+#btn {
+    border: none;
+    margin-left: 20px;
+}
+

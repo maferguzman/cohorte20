@@ -1,0 +1,14 @@
+form {
+    background-color: lightpink;
+    width: 300px;
+    padding: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 80px;
+}
+
+#btn {
+    margin-top: 5px;
+}

@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+    background-color: gainsboro;
+}   
+
+#links {
+    background-color: greenyellow;
+}
+
+#main {
+    background-color: yellow;
+}
+
+footer {
+    background-color: gray;
+}
+
+.space {
+    margin: 0;
+}

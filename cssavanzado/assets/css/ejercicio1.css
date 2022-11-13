@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+p {
+    font-family: 'Playfair Display', serif;
+}
+
+.titulo {
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.gg-mic {
+    color: green;
+}
+
+.gg-chanel {
+    color: goldenrod;
+    width: 200px;
+    height: 200px;
+}
