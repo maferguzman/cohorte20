@@ -2,7 +2,7 @@ package clases;
 
 public class MiClase {
 	int atributo1;
-	String atributo2;
+	private String atributo2;
 	// private String atributo2;
 	
 	public MiClase() {
@@ -18,10 +18,10 @@ public class MiClase {
 		MiClase obj = new MiClase();
 		int n = obj.atributo1 = 2357;
 		String s = obj.atributo2 = "Hola";
-		//System.out.println("-->" + n);
-		//System.out.println("-->" + s);
-		//System.out.println(atributo1);
-		//System.out.println(atributo2);
+		System.out.println("-->" + n);
+		System.out.println("-->" + s);
+		System.out.println(atributo1);
+		System.out.println(atributo2);
 	}
 	
 	public double metodo1() {
@@ -30,7 +30,7 @@ public class MiClase {
 	}
 	
 	
-	String raza;
+	/*String raza;
 	String nombre;
 	int edad;
 	
@@ -41,6 +41,6 @@ public class MiClase {
 		System.out.println("tipo animal: " + raza);
 		System.out.println("nombre: " + nombre);
 		System.out.println("edad: " + edad);
-	} 
+	} */
 	
 }
