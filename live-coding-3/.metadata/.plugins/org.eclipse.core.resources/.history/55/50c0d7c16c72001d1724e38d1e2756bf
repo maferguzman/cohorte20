@@ -1,0 +1,32 @@
+package actividad;
+
+import java.util.Scanner;
+
+public class MangosNaranjas {
+	//Entrada d eusuario
+	Scanner entrada = new Scanner(System.in);
+	
+	//atributos
+		int mangos; 
+		int naranjas;
+	
+	public MangosNaranjas(int mangos, int naranjas) {
+		this.naranjas = naranjas;
+				this.mangos = mangos;
+	}
+	
+	
+	
+}
+
+/*
+ * System.out.println("Ingrese el número de mangos");
+	mangos = entrada.nextInt(); //para n° de mangos
+	
+	System.out.println("Ingrese el número de mangos");
+	naranjas = entrada.nextInt(); //para n° de naranjas
+	
+	System.out.println("El número de mangos en una caja es: 103 "
+			+ "El número de naranjas en una caja es: 97");
+ */
+

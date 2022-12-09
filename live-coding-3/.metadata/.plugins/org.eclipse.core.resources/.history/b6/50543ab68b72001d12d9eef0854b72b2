@@ -1,0 +1,43 @@
+package actividad;
+
+import java.util.Scanner;
+
+public class MangosNaranjas {
+	//Entrada de usuario
+	Scanner entrada = new Scanner(System.in);
+	
+		int mangos; 
+		int naranjas;
+	
+	public MangosNaranjas(int mangos, int naranjas) {
+		this.naranjas = naranjas;
+		this.mangos = mangos;
+	}
+	
+	//Añadir Método MCD
+	public static int MCD(int mangos, int naranjas) {
+		
+		int a = Math.max(mangos, naranjas); //el maximo se guarda en a (12772)
+		int b = Math.min(mangos, naranjas); // el minimo se guarda en b (12028)
+		
+		int resultado = 0;
+		
+		do {
+		
+		resultado = b; 
+		b = a % b; 
+		a = resultado; 
+
+		
+		} while (b !=0);
+		
+		return resultado;
+}
+
+		public void imprimir(){
+		int cajas = MCD(mangos, naranjas);
+		System.out.println("Cajas necesarias: " + cajas);
+	}
+}
+
+

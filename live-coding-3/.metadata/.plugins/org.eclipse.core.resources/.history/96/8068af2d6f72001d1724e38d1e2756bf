@@ -1,0 +1,25 @@
+package actividad;
+
+import java.util.Scanner;
+
+public class MangosNaranjas {
+	//Entrada de usuario
+	Scanner entrada = new Scanner(System.in);
+	
+	//
+		int mangos; 
+		int naranjas;
+	
+	public MangosNaranjas(int mangos, int naranjas) {
+		this.naranjas = naranjas;
+				this.mangos = mangos;
+	}
+	
+	/*Método para calcular N° d frutas por cajas
+	public static int calcular(int mangos, int naranjas) {
+		return 
+	} */
+	
+}
+
+
