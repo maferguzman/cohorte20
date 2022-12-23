@@ -1,0 +1,54 @@
+package logicaProgramacion6;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Diccionario {
+
+	  public static void main(String[] args) {
+	    
+	    HashMap<String, String> diccionario = new HashMap<String, String>();
+	    Scanner entrada = new Scanner (System.in);
+	    
+	    diccionario.put("Hola", " Hello");
+	    diccionario.put("Adios", " Goodbye");
+	    diccionario.put("Bienvenido", " Welcome");
+	    diccionario.put("Saludos", " Greetings");
+	    diccionario.put("Porque", " Because");
+	    diccionario.put("Alguno", " Some");
+	    diccionario.put("Familia", " Family");
+	    diccionario.put("Hermano", " Brother");
+	    diccionario.put("Hermana", " Sister");
+	    diccionario.put("Abuelos", " Grandparents");
+	    diccionario.put("Amigo", " Friend");
+	    diccionario.put("mesa", "table");
+	    diccionario.put("silla", "chair");
+	    diccionario.put("montaña", "mountain");
+	    diccionario.put("baloncesto", "basketball");
+	    diccionario.put("juego", "game");
+	    diccionario.put("caballo", "horse");
+	    diccionario.put("mar", "sea");
+	    
+	    System.out.println("-----Bienvenido al diccionario de palabras básicas en inglés----");
+	    
+	    System.out.println("Introduzca una palabra:");
+	    String palabra = entrada.next();
+	    
+	    if (diccionario.containsKey(palabra)) {
+	      System.out.print("Traduccion " + palabra);
+	      System.out.println(diccionario.get(palabra)+".");
+	      } else {
+	      System.out.print("Traduccion no disponible");
+	      } 
+	  }
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

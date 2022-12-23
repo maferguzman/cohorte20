@@ -1,0 +1,30 @@
+package logicaProgramacion8;
+
+import java.util.Scanner;
+
+public class Arreglos {
+
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		int numPrimo; //guardar variable
+		
+		System.out.println("------Ingrese un número-------");
+		
+		numPrimo = entrada.nextInt();
+		
+		boolean primo = true;
+		
+		for (int i = 2; i <= numPrimo; i++) {
+			if (numPrimo % i == 0);
+		}
+		
+		if (primo)
+			System.out.println(numPrimo + " ok");
+		else 
+			System.out.println(numPrimo + " ok");
+	}
+	
+	
+}

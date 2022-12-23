@@ -1,0 +1,31 @@
+package logicaProgramacion6;
+
+import java.util.Scanner;
+
+public class ReversaPalabras {
+
+			public static void main(String[] arg) {
+
+			// entrada del usuario
+			Scanner entrada = new Scanner(System.in);
+			
+			String palabra;
+			System.out.println("------Ingrese una palabra------");
+			palabra = entrada.next();
+
+
+			        //el String se guarda en un array para poder aplicar los métodos
+
+			        char[] reversaPalabra = palabra.toCharArray();
+
+			        //iteration
+
+			        for (int i = reversaPalabra.length - 1; i >= 0; i--)
+
+			         // print reversed String
+
+			            System.out.print(reversaPalabra[i]);
+
+			}  
+	
+}

@@ -1,0 +1,34 @@
+package logicaProgramacion6;
+
+import java.util.Scanner;
+
+public class ReversaPalabras {
+
+			public static void main(String[] arg) {
+
+			// entrada del usuario
+			Scanner entrada = new Scanner(System.in);
+			
+			String palabra;
+			System.out.println("------Ingrese una palabra------");
+			palabra = entrada.next();
+
+			//String stringinput = "ol";
+
+			        // convert String to character array
+
+			        // by using toCharArray
+
+			        char[] resultarray = palabra.toCharArray();
+
+			        //iteration
+
+			        for (int i = resultarray.length - 1; i >= 0; i--)
+
+			         // print reversed String
+
+			            System.out.print(resultarray[i]);
+
+			}  
+	
+}

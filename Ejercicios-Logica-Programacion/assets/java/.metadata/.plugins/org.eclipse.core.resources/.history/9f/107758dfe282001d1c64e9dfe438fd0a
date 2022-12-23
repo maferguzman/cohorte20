@@ -1,0 +1,17 @@
+package logicaProgramacion8;
+
+public class Arreglos {
+	
+	public static void main(String[] args) {
+	int numero = 5;
+	int contador = 2;
+	boolean primo = true;
+	
+	while ((primo) && (contador!=numero)){
+	  if (numero % contador == 0)
+	    primo = false;
+	  contador++;
+	}
+	System.out.println(primo);
+	}
+}

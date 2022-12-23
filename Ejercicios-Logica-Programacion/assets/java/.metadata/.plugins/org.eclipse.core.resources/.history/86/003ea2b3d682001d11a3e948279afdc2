@@ -1,0 +1,47 @@
+package logicaProgramacion7;
+
+public class CalcularMinutos {
+	public class S04Ejercicio22 {
+		  public static void main(String[] args) {
+
+		    System.out.print("Escriba un día de lunes a viernes");
+		    String dia = System.console().readLine();
+
+		    int diaNumerico = 0;
+
+		    switch(dia) {
+		      case "lunes":
+		        diaNumerico = 0;
+		        break;
+		      case "martes":
+		        diaNumerico = 1;
+		        break;
+		      case "miércoles":
+		      case "miercoles":
+		        diaNumerico = 2;
+		        break;
+		      case "jueves":
+		        diaNumerico = 3;
+		        break;
+		      case "viernes":
+		        diaNumerico = 4;
+		        break;
+		      default:
+		        System.out.print("Revise que sea un día entre semana");
+		    }
+		    
+		    System.out.println("--------Ingrese la hora y minutos exactos---------");
+		    
+		    System.out.print("Hora: ");
+		    int horas = Integer.parseInt(System.console().readLine());
+		    
+		    System.out.print("Minutos: ");
+		    int minutos = Integer.parseInt(System.console().readLine());
+		    
+		    int minutosTotales = (4 * 24 * 60) + (15 * 60);
+		    int minutosActuales = (diaNumerico * 24 * 60) + (horas * 60) + minutos;
+		    
+		    System.out.print("Faltan " + (minutosTotales - minutosActuales) + " minutos para el fin semana");
+		  }
+	}
+}

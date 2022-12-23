@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\guzma_qmzk4al\OneDrive\Escritorio\js\assets\java\.metadata\.plugins\org.eclipse.jdt.core
+1184316562.index
+786538076.index
+1865797976.index
